@@ -1,0 +1,13 @@
+{
+  "name": "behavior-transfer",
+  "version": "1.0.0",
+  "description": "Transfer behavior of javascript objects",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "should": "latest",
+    "mocha": "1.17.1"
+  },
+  "author": "gutobortolozzo",
+  "license": "ISC"
+}
