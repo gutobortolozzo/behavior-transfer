@@ -1,6 +1,6 @@
 {
   "name": "behavior-transfer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transfer behavior of javascript objects",
   "main": "index.js",
   "dependencies": {
