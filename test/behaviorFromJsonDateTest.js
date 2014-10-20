@@ -1,4 +1,4 @@
-var subject = require("../src/index.js");
+var subject = require("../src/behavior-transfer.js");
 var CarOwner  = require("../test/CarOwner.js");
 var CarNumber  = require("../test/CarNumber.js");
 var CarFacade  = require("../test/CarFacade.js");

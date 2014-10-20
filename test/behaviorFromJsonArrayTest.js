@@ -1,4 +1,4 @@
-var subject = require("../src/index.js");
+var subject = require("../src/behavior-transfer.js");
 var Car  = require("../test/Car.js");
 var CarParking  = require("../test/CarParking.js");
 var assert = require("assert");
