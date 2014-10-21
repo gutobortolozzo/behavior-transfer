@@ -9,10 +9,11 @@ A small library providing utility methods to serialize javascript objects with t
 
 ## Usage
 
-  var transfer = require('behavior-transfer')
-      toJson = transfer.toJson(object),
-      object = scapegoat.fromJson(toJson);
-
+```javascript
+	var transfer = require('behavior-transfer')
+	var toJson = transfer.toJson(object),
+	var object = scapegoat.fromJson(toJson);
+```
 ## Tests
 
   npm test
