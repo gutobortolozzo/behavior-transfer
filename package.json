@@ -3,8 +3,7 @@
   "version": "1.0.2",
   "description": "Transfer behavior of javascript objects",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "should": "latest",
     "mocha": "1.17.1"
@@ -22,6 +21,5 @@
       "url": "https://github.com/gutobortolozzo/behavior-transfer/blob/master/LICENSE-MIT"
     }
   ],
-  "author": "gutobortolozzo",
-  "license": "ISC"
+  "author": "gutobortolozzo"
 }

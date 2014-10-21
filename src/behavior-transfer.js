@@ -11,7 +11,7 @@ var ASSUMPTIONS = {
     '[object Error]'   : 'error'
 },
 TOSTRING = Object.prototype.toString;
-
+REPLACE_LAST_COMMA = /,([^,]*)$/;
 function type(o) {
     return ASSUMPTIONS[typeof o] || ASSUMPTIONS[TOSTRING.call(o)] || (o ? 'object' : 'null');
 };
@@ -55,14 +55,14 @@ var toJsonImpl = function(object){
 			object[element].forEach(function(object){
 				value += toJsonImpl(object)+' , '
 			});
-			value = value.replace(/,([^,]*)$/,'$1') + ']';
+			value = value.replace(REPLACE_LAST_COMMA,'$1') + ']';
 			behaviorOutput += "\"" + element + "\" : " +value+" , ";
 			continue;
 		}
 		behaviorOutput += "\"" + element + "\" : \"" +object[element]+"\" , ";
 	}
 		
-	return behaviorOutput.replace(/,([^,]*)$/,'$1').concat('}');
+	return behaviorOutput.replace(REPLACE_LAST_COMMA,'$1').concat('}');
 };
 
 var fromJsonImpl = function(jsonObject){
