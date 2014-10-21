@@ -1,1 +1,1 @@
-module.exports = require('behavior-transfer.js');
+module.exports = require('./src/behavior-transfer.js');
