@@ -12,7 +12,7 @@ A small library providing utility methods to serialize javascript objects with t
 ```javascript
 	var transfer = require('behavior-transfer')
 	var toJson = transfer.toJson(object),
-	var object = scapegoat.fromJson(toJson);
+	var object = transfer.fromJson(toJson);
 ```
 ## Tests
 
