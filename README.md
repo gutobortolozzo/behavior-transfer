@@ -10,6 +10,7 @@ A small library providing utility methods to serialize javascript objects with t
 ## Usage
 
 ```javascript
+    var subject = require('behavior-transfer');
     var Person = function(name){ 
     	this._name = name;
     	this.greeting = function(){ 
