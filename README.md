@@ -21,7 +21,7 @@ A small library providing utility methods to serialize javascript objects with t
     var json = subject.toJson(john);
     var materialized = subject.fromJson(json);
     materialized.greeting();
-	> 'Greetings my name is John')
+	> 'Greetings my name is John'
 ```
 ## Tests
 
