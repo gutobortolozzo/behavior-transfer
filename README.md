@@ -10,9 +10,17 @@ A small library providing utility methods to serialize javascript objects with t
 ## Usage
 
 ```javascript
-	var transfer = require('behavior-transfer')
-	var toJson = transfer.toJson(object),
-	var object = transfer.fromJson(toJson);
+    var Person = function(name){ 
+    	this._name = name;
+    	this.greeting = function(){ 
+    		return 'Greetings my name is '+this._name; 
+    	} 
+    };
+    var john = new Person('John');
+    var json = subject.toJson(john);
+    var materialized = subject.fromJson(json);
+    materialized.greeting();
+	> 'Greetings my name is John')
 ```
 ## Tests
 
