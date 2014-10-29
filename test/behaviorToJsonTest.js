@@ -1,21 +1,9 @@
+var Car  = require("../test/Car.js");
 var subject = require("../src/behavior-transfer.js");
 var assert = require("assert");
 var should = require('should');
 
-describe('toJson behavior', function() {
-	
-	var Car = function Car(nome){                       
-	
-		this._name = nome;
-	
-		this.name = function(){
-			return this.name;
-		}
-	
-		this.toString = function(prefix){
-			return prefix + this.name;
-		}
-	}
+describe('toJson behavior', function() {	
 	
   	it('with car assumptions', function() {
 		var car = new Car("Car");
@@ -25,11 +13,11 @@ describe('toJson behavior', function() {
   	});
 	
   	it('convert object instance into json-string with function name', function() {
-		subject.toJson(new Car("Car")).should.containEql("\"name\" : \"function (){ return this.name; }");
+		subject.toJson(new Car("Car")).should.containEql('"name" : "function (){ return this._name; }"');
   	});
 	
   	it('convert object instance into json-string with function toString', function() {
-		subject.toJson(new Car("Car")).should.containEql("\"toString\" : \"function (prefix){ return prefix + this.name; }\"");
+		subject.toJson(new Car("Car")).should.containEql('"toString" : "function (prefix){ return prefix + this._name; }"');
   	});
 	
   	it('convert object instance into json-string with field _name', function() {
