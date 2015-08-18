@@ -1,20 +1,9 @@
 var subject = require(process.cwd()+'/index.js');
+var Simple = require(process.cwd()+'/test/objects/Simple.js');
 var assert = require("assert");
 var should = require('should');
 
 describe('Array behavior with double quotes', function() {
-	
-	var Simple = function(){
-		this.name = "aldruin"
-	}
-	
-	Simple.prototype.hello = function(){
-		return "hello";
-	};
-	
-	Simple.prototype.world = function(){
-		return 'world ' + this.name + " greets";
-	};
 	
   	it('simple object with double quoted string', function() {
 		var simple = new Simple();
