@@ -1,6 +1,6 @@
-var subject = require("../src/behavior-transfer.js");
-var Car  = require("../test/Car.js");
-var CarParking  = require("../test/CarParking.js");
+var subject = require(process.cwd()+'/index.js');
+var Car = require(process.cwd()+"/test/objects/Car.js");
+var CarParking  = require(process.cwd()+"/test/objects/CarParking.js");
 var assert = require("assert");
 var should = require('should');
 

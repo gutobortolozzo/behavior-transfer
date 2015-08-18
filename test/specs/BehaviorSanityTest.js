@@ -1,4 +1,4 @@
-var subject = require("../index.js");
+var subject = require(process.cwd()+'/index.js');
 var assert = require("assert");
 var should = require('should');
 

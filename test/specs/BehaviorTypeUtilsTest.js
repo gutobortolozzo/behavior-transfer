@@ -1,4 +1,4 @@
-var type = require('../src/typeUtils.js');
+var type = require(process.cwd()+'/src/typeUtils.js');
 var assert = require("assert");
 var should = require('should');
 

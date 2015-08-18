@@ -13,7 +13,7 @@
       "url": "git://github.com/gutobortolozzo/behavior-transfer"
   },
   "scripts": {
-    "test": "make test"
+    "test": "node_modules/mocha/bin/mocha test/ --recursive"
   },
   "licenses": [
     {
