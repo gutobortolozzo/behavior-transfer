@@ -1,26 +1,38 @@
 var type = require('./typeUtils.js');
 
 var mappers = new Object();
+
 mappers['function'] = function(element, value){
-	var name = element;
-	var context = value.toString().replace(/(\r\n|\n|\r)/gm," ").replace(/\s+/g," ");
-	return "\"" + name + "\" : \"" +context+ "\" , ";
+	var context = '';
+	if(!!value.toString().match(/[\\""]/g)){
+		context = value.toString().replace(/[\\""]/g, '\'');
+	}else{
+		context = value.toString().replace(/(\r\n|\n|\r)/gm," ");		
+	}
+	
+	return "\"" + element + "\" : \"" +context.replace(/\s+/g," ")+ "\" , ";
 };
+
 mappers['number'] = function(element, value){
 	return "\"" + element + "\" : "+value+" , ";
 };
+
 mappers['boolean'] = function(element, value){
 	return "\"" + element + "\" : "+value+" , ";
 };
+
 mappers['string'] = function(element, value){
 	return "\"" + element + "\" : \"" +value+"\" , ";
 };
+
 mappers['object'] = function(element, value){
 	return "\"" + element + "\" : "+toJsonImpl(value)+ " , ";
 };
+
 mappers['date'] = function(element, value){
 	return "\"" + element + "\" : \""+value.toString()+"\" , ";
 };
+
 mappers['array'] = function(element, value){
 	var result = "["
 	
@@ -30,6 +42,7 @@ mappers['array'] = function(element, value){
 	result = result.replace(REPLACE_LAST_COMMA,'$1') + ']';
 	return "\"" + element + "\" : " +result+" , ";
 };
+
 mappers['undefined'] = function(element, value){
 	return "\"" + element + "\" : \""+value+"\" , ";
 };
