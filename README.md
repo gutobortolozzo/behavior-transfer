@@ -1,5 +1,4 @@
 Behavior transfer
-
 [![Codeship Status](https://codeship.com/projects/699d11d0-766b-0133-fc0b-4e2d2a189916/status?branch=master)](https://codeship.com/projects/118176)
 =========
 
