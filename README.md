@@ -1,4 +1,4 @@
-Behavior transfer [![Build Status](https://semaphoreci.com/api/v1/projects/52f300c3-a6de-42c4-b48b-47b0f1f61e1d/615911/badge.svg)](https://semaphoreci.com/gutobortolozzo/behavior-transfer)
+Behavior transfer 
 =========
 
 A small library providing utility methods to serialize javascript objects with their behavior.
