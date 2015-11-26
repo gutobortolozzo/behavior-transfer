@@ -1,5 +1,4 @@
-Behavior transfer
-[![Codeship Status](https://codeship.com/projects/699d11d0-766b-0133-fc0b-4e2d2a189916/status?branch=master)](https://codeship.com/projects/118176)
+Behavior transfer [![Build Status](https://semaphoreci.com/api/v1/projects/52f300c3-a6de-42c4-b48b-47b0f1f61e1d/615911/badge.svg)](https://semaphoreci.com/gutobortolozzo/behavior-transfer)
 =========
 
 A small library providing utility methods to serialize javascript objects with their behavior.
