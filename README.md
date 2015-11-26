@@ -38,3 +38,4 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 * 1.0.1 Minor bug fixes
 * 1.0.2 Performance improvement
 * 1.0.3 Minor performance improvement
+
